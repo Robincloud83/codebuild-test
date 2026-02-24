@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Hello World"
+      - apt-get update 
+      - apt install nginx -y
+      - echo "Hello World" > /var/www/html/index.html
